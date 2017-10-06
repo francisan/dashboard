@@ -1,0 +1,96 @@
+<div class="container-fluid fill">
+	<div class="panel panel-default" id="map">
+		<div class="panel-heading headerpanel"
+			style="padding: 0px 0px; !important">
+			<mainheader selected="myreport"></mainheader>
+		</div>
+
+		<div class="panel-body" id="contentpanel"
+			style="padding: 0px 0px; !important">
+
+
+			<div class="row"
+				style="background: transparent url('resources/images/bg.jpg')">
+				<div class="col-md-12">
+					<div class="container" style="padding: 0px 0px; !important">
+
+
+		<div class="row">
+			<div class="col-md-12 ">
+				<div id="chartdiv28"/>
+			</div>
+		</div>
+
+
+					</div>
+
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-12" style="padding-top: 16px;">
+				<div class="container" style="padding: 0px 0px; !important">
+					<fieldset class="centers">
+					<legend class="centers">Centers</legend>
+					
+					
+					
+					<div class="row">
+						  
+						 <div class="col-md-3"  ng-repeat="center in centerList">
+							<input type="checkbox" class="checkbox-round" name="centerCheckbox"  ng-model="selectedCenters[center.id]" ng-click="comparecenters()" value="{{center.id}}"/> <label>{{center.name}}</label>
+						</div>
+					</div>
+				</fieldset>
+</div></div></div>
+
+
+
+<div class="row">
+				<div class="col-md-12" style="padding-top: 16px;">
+				<div class="container" style="padding: 0px 0px; height:200px; !important;  overflow-y:scroll;">
+
+				<table id="example" class="table table-striped table-bordered"
+					cellspacing="0" width="100%" >
+					<thead style="background-color: #efefef;">
+
+						<tr>
+
+							<th>Center</th>
+							<th>Radiologist</th>
+							<th  ng-repeat="header in uniqueModalityHeader">{{header}}</th>
+						</tr>
+					</thead>
+
+					<tbody  ng-repeat="center in centerDetails">
+						<tr ng-repeat="values in center.values" ng-init="outerIndex = 0">
+							<td rowspan="{{center.values.length}}" style="vertical-align: middle;" ng-if="$first">{{center.center}}</td> <!-- -->
+							<td>
+								{{values.radiologist}}
+							</td>
+							<td ng-repeat="header in uniqueModalityHeader">
+								{{values.modalities[header]}}
+							</td>
+							
+						</tr>
+
+						
+
+					</tbody>
+				</table>
+				</div>
+			
+			</div>
+</div>
+
+
+
+		</div>
+		<div class="panel-footer" id="footerpanel">
+			<mainfooter></mainfooter>
+		</div>
+	</div>
+
+</div>
+

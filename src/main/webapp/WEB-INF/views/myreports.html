@@ -1,0 +1,320 @@
+
+<div class="container-fluid fill">
+	<div class="panel panel-default" id="map">
+		<div class="panel-heading headerpanel"
+			style="padding: 0px 0px; !important">
+			<mainheader selected="myreport"></mainheader>
+		</div>
+
+		<div class="panel-body" id="contentpanel"
+			style="padding: 0px 0px; !important">
+			
+			<div class="container" style="padding: 0px 0px; !important">
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<!-- <div class="container" style="padding: 0px 0px; !important"> -->
+
+
+		<div class="row">
+			<div class="col-md-12 ">
+				<div id="chartdiv28"/>
+			</div>
+		</div>
+
+
+					<!-- </div> -->
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<!-- <div class="container" style="padding: 0px 0px; !important"> -->
+						<table id="searchingTable" border="0" cellspacing="5" cellpadding="5" style="width:100%">
+					<tbody>
+
+						<tr style="background-color: #66ccff">
+							<td>Modality</td>
+							<td><select name="modality" id="modality"><option
+										value="ALL">ALL</option>
+									<option value="CT">CT</option>
+									<option value="XRAY">XRAY</option>
+									<option value="US">US</option>
+									<option value="CR">CR</option>
+									<option value="MR">MR</option>
+									<option value="NM">NM</option>
+									<option value="OT">OT</option>
+									<option value="BI">BI</option>
+									<option value="DG">DG</option>
+									<option value="ES">ES</option>
+							</select>
+							<td>Procedure</td>
+							<td><input type="text" id="txtProcedure" name="txtProcedure"></td>
+							<td>Radiologist</td>
+							<td><input type="text" id="txtRadiologist"
+								name="txtRadiologist" value=""></td>
+							<td colspan="3"></td>
+						</tr>
+						<tr style="background-color: #66ccff">
+							<td>Date</td>
+							<td><select name="date" id="date"><option value="">Study
+										Completed</option>
+									<option value="CT">Dictated</option>
+									<option value="CT">Preliminary</option>
+									<option value="US">Finalized</option>
+									<option value="CR">Addedum</option>
+							</select></td>
+							<td>Start Date:</td>
+							<td><input type="text" id="min" name="min" ></td>
+							<td>End Date:</td>
+							<td><input type="text" id="max" name="max"></td>
+							<td>Hospital</td>
+							<td><input type="text" id="" name="" value="ALL"></td>
+							<td style="vertical-align: centre"><input type="submit"
+								value="Search" ng-click="changeDate()" name="max"></td>
+						</tr>
+
+					</tbody>
+				</table>
+					<!-- </div> -->
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-12" >
+				<div class="row">
+				<div class="col-md-12" >&nbsp;
+				</div>
+				</div>
+				
+					<!-- <div class="container"
+						style="padding: 0px 0px; height: 200px; ! important; overflow-y: scroll;"> -->
+
+						<table id="example" class="cell-border" cellspacing="0"
+							width="100%"  >
+							<thead>
+								<tr style="background-color: #dddddd;">
+									<th rowspan="2">Radiologist</th>
+									<th rowspan="2">Centre</th>
+									<th rowspan="2">Procedure</th>
+									<th rowspan="2">Modality</th>
+									<th colspan="7">Study Count</th>
+									<th colspan="4">TAT Avg</th>
+								</tr>
+								
+								<tr style="background-color: #dddddd;">
+									<th>Total</th>
+									<th>Pending rpt</th>
+									<th>Normal</th>
+									<th>Abnormal</th>
+									<th>Preliminary</th>
+									<th>Finalized</th>
+									<th>Addendum</th>
+									<th>Defined</th>
+									<th>Normal rpt</th>
+									<th>Abnormal rpt</th>
+									<th>Abnormal rpt</th>
+								</tr>
+							</thead>
+
+							<tbody>
+							</tbody>
+						</table>
+					<!-- </div> -->
+
+				</div>
+			</div>
+
+</div>
+
+		</div>
+		<div class="panel-footer" id="footerpanel">
+			<mainfooter></mainfooter>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<mainheader selected="myreport"></mainheader>
+
+<div class="row" id="dashboardContentDiv"
+	style="background: transparent url('resources/images/bg.jpg') no-repeat; width: 100%;">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 ">
+				<div id="chartdiv1">
+					<div id="curtain" style="text-align: center; vertical-align: middle;"><i class="fa fa-spinner fa-spin" style="font-size:100px; text-align: center;"></i></div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		&nbsp;</i>
+	</div>
+</div>
+
+
+<div class="row" style="width: 100%">
+	<div class="col-md-12">
+		<div class="container" id="newsearch" style="height: 80px">
+			<div class="row">
+
+				<table border="0" cellspacing="5" cellpadding="5">
+					<tbody>
+
+						<tr>
+							<td>Modality</td>
+							<td><select name="modality" id="modality"><option
+										value="ALL">ALL</option>
+									<option value="CT">CT</option>
+									<option value="XRAY">XRAY</option>
+									<option value="US">US</option>
+									<option value="CR">CR</option>
+									<option value="MR">MR</option>
+									<option value="NM">NM</option>
+									<option value="OT">OT</option>
+									<option value="BI">BI</option>
+									<option value="DG">DG</option>
+									<option value="ES">ES</option>
+							</select>
+							<td>Procedure</td>
+							<td><input type="text" id="txtProcedure" name="txtProcedure"></td>
+							<td>Radiologist</td>
+							<td><input type="text" id="txtRadiologist"
+								name="txtRadiologist" value=""></td>
+							<td></td>
+						</tr>
+						<tr style="background-color: #66ccff">
+							<td>Date</td>
+							<td><select name="date" id="date"><option value="">Study
+										Completed</option>
+									<option value="CT">Dictated</option>
+									<option value="CT">Preliminary</option>
+									<option value="US">Finalized</option>
+									<option value="CR">Addedum</option>
+							</select></td>
+							<td>Start Date:</td>
+							<td><input type="text" id="min" name="min"></td>
+							<td>End Date:</td>
+							<td><input type="text" id="max" name="max"></td>
+							<td>Hospital</td>
+							<td><input type="text" id="" name="" value="ALL"></td>
+							<td style="vertical-align: centre"><input type="submit"
+								value="Search" ng-click="changeDate()" name="max"></td>
+						</tr>
+
+					</tbody>
+				</table>
+				<table id="example"  class="cell-border" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th rowspan="2">Sl.no.</th>
+							<th rowspan="2">Radiologist</th>
+							<th rowspan="2">Centre</th>
+							<th rowspan="2">Procedure</th>
+							<th rowspan="2">Modality</th>
+							<th colspan="7">Study Count</th>
+							<th colspan="4">TAT Avg</th>
+						</tr>
+						<tr>
+
+							<th>Total</th>
+							<th>Pending rpt</th>
+							<th>Normal</th>
+							<th>Abnormal</th>
+							<th>Preliminary</th>
+							<th>Finalized</th>
+							<th>Addendum</th>
+							<th>Defined</th>
+							<th>Normal rpt</th>
+							<th>Abnormal rpt</th>
+							<th>Abnormal rpt</th>
+						</tr>
+					</thead>
+
+					<tbody>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">&nbsp;</div>
+</div>
+
+
+<div class="row" style="width: 100%">
+	<div class="col-md-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="chartDataTitle"></div>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-md-12" id="chartDataDiv"></div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ -->
+
