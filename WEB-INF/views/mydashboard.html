@@ -1,0 +1,1113 @@
+<mainheader selected="dashboard"></mainheader>
+
+
+<div id="dashboardContentDiv" class="container-fluid"
+	style="background: transparent url('resources/images/bg.jpg') no-repeat"  ng-if="user.role=='3'">
+	<div class="container">
+		<div class="row" style="margin-top: 14px;">
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.STUDIES_PERFORMED==true">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_ELEVEN">STUDIES
+									PERFORMED</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.STUDIES_PERFORMED==true">
+					<div class="col-md-4 ">
+						<img src="resources/images/studiesPerformed.png"
+							style="width: 46px; position: relative; left: 28px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.1em">
+						<p class="patientNo">150</p>
+					</div>
+				</div>
+
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.EQUIPMENT_CHANGED_NUMBERS==true">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_ELEVEN">EQUIPMENT
+									CHANGED NUMBERS</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.EQUIPMENT_CHANGED_NUMBERS==true">
+					<div class="col-md-4 ">
+						<img src="resources/images/equipment-icon.png"
+							style="width: 77px; position: relative; left: 1px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.1em">
+						<p class="patientNo" style="color: #FD662D">150</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.STUDIES_PENDING==true">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_FOUR">STUDIES
+									PENDING</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.STUDIES_PENDING==true">
+					<div class="col-md-4 ">
+						<img src="resources/images/studiesPending.png"
+							style="width: 49px; position: relative; left: 29px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.2em;">
+						<p class="bedOccupancyNo" style="bottom: 1px;">85%</p>
+					</div>
+				</div>
+
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.EMERGENCY_CASES==true">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_FOUR">EMERGENCY
+									CASES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;"
+					ng-if="pref.EMERGENCY_CASES==true">
+					<div class="col-md-4 ">
+						<img src="resources/images/emergency-icon.png"
+							style="width: 67px; position: relative; left: 15px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.2em;">
+						<p class="bedOccupancyNo" style="color: #3193D8; bottom: 1px;">85%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">REPORTS</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/reports_icon.png"
+							style="width: 43px; position: relative; left: 14px; bottom: -1px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalLabOrderNo">PRELIMINARY</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalLabOrderText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">FINALIZED</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">X-RAY
+									STUDIES - DONE</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/xRay_icon.png"
+							style="width: 45px; position: relative; left: 24px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="avgTurnAroundNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="avgTurnAroundText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class="row" style="margin-bottom: 14px;">
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">US
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/US_icon.png"
+							style="width: 58px; position: relative; left: 18px;"></img>
+					</div>
+					<div class="col-md-4"
+						style="border-right: 2px solid #eee; line-height: 2em;">
+
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">CT
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/CT_icon.png"
+							style="width: 62px; position: relative; left: 11px; bottom: -2px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalAmendmentsNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalAmendmentsText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">MR
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/MR_icon.png"
+							style="width: 57px; position: relative; left: 12px; bottom: -2px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">RF/NM/ETC
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/RF_icon.png"
+							style="width: 50px; position: relative; left: 15px; bottom: -4px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalClaimNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalClaimText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+<!--  start of hod role -->
+
+
+
+<div id="dashboardContentDiv" class="container-fluid"
+	style="background: transparent url('resources/images/bg.jpg') no-repeat" ng-if="user.role=='2'" >
+	<div class="container">
+		<div class="row" style="margin-top: 14px;">
+			<div class="col-md-3" style="border: 10px solid; border-color: transparent;">
+				
+					
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_ELEVEN">EQUIPMENT CHANGED NUMBERS</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/equipment-icon.png"
+							style="width: 77px;position: relative;left: 1px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.1em">
+						<p class="patientNo" style="color:#FD662D">150</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black" href="#!reports/REPORT_FOUR">EMERGENCY CASES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/emergency-icon.png"
+							style="width: 67px;position: relative;left: 15px;"></img>
+					</div>
+					<div class="col-md-8 " style="height: 5.2em;">
+						<p class="bedOccupancyNo" style="color:#3193D8;bottom: 1px;">85%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">REPORTS</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/reports_icon.png"
+							style="width: 43px; position: relative; left: 14px; bottom: -1px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalLabOrderNo">PRELIMINARY</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalLabOrderText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">FINALIZED</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">X-RAY
+									STUDIES - DONE</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/xRay_icon.png"
+							style="width: 45px; position: relative; left: 24px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="avgTurnAroundNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="avgTurnAroundText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class="row" style="margin-bottom: 14px;">
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">US
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/US_icon.png"
+							style="width: 58px; position: relative; left: 18px;"></img>
+					</div>
+					<div class="col-md-4"
+						style="border-right: 2px solid #eee; line-height: 2em;">
+
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">CT
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/CT_icon.png"
+							style="width: 62px; position: relative; left: 11px; bottom: -2px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalAmendmentsNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalAmendmentsText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">MR
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/MR_icon.png"
+							style="width: 57px; position: relative; left: 12px; bottom: -2px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="goldText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3"
+				style="border: 10px solid; border-color: transparent;">
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-12">
+						<p id="widgetHeading">
+							<b><a style="color: black;" href="#!reports/REPORT_FOUR">RF/NM/ETC
+									STUDIES</a></b>
+						</p>
+						<hr />
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff;">
+					<div class="col-md-4 ">
+						<img src="resources/images/RF_icon.png"
+							style="width: 50px; position: relative; left: 15px; bottom: -4px;"></img>
+					</div>
+					<div class="col-md-4 "
+						style="border-right: 2px solid #eee; line-height: 2em;">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalClaimNo">DONE</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="totalClaimText">05</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 ">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverNo">PENDING</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<p class="silverText">25</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+
+<!-- end of hod role -->
+
+
+
+<div class="container-fluid" style="margin-top: -14px; margin-bottom: -8px;">
+	<div class="container">
+
+		<div class="row" style="margin: 0px;">
+			<div class='col-md-12'>
+				<p id="reportsheader">Graphs</p>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+
+<div id='charts' class="container-fluid">
+	<div class="container">
+
+
+
+
+
+		<!--  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    
+   
+    <div class="carousel-inner">
+      <div class="item active">
+      
+      
+      
+       <div class="row">
+				<div class="col-md-6 ">
+					<div class="chartDivs">
+						<amchart name="chartdiv4" reportid="REPORT_FOUR"></amchart>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="chartDivs">
+						<amchart name="chartdiv5" reportid="REPORT_FIVE"></amchart>			
+					</div>
+				</div>
+			</div>
+					
+					
+					
+					
+      </div>
+
+      <div class="item">         
+       	<div class="row">
+				
+				<div class="col-md-6 ">
+					<div class="chartDivs">
+						<amchart name="chartdiv6" reportid="REPORT_SIX"></amchart>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="chartDivs">
+						<amchart name="chartdiv7" reportid="REPORT_SEVEN"></amchart>						
+					</div>
+				</div>
+			</div>
+					
+      </div>
+      
+      <div class="item">         
+       	<div class="row">
+				
+				<div class="col-md-6 ">
+					<div class="chartDivs">
+						<amchart name="chartdiv11" reportid="REPORT_ELEVEN"></amchart>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="chartDivs">
+						 <amchart name="chartdiv7" reportid="REPORT_SEVEN"></amchart>	 				
+					</div>
+				</div>
+			</div>
+					
+      </div>
+    
+      
+    </div>
+
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"  style=" color: green; margin-left: 0%;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" style=" color: green; margin-left: 100%;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> 
+				
+				
+	-->
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="row">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<div class="overlay"></div>
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="chartOverlay"></div>
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<!-- <h5>Annual Production</h5> -->
+					</div>
+
+				</div>
+				<div id="loader"></div>
+
+
+			</div>
+
+			<div class="col-md-3" style="padding-right: 0px;" ng-if="user.role=='3'">
+				<div class="row chartHead">Modality wise Studies Performed</div>
+				<div class="chartDivs" id="chartdiv7" style="height: 16.5em;"
+					onclick="onpopup('chartdiv1','chart_value_1')">
+					<div class="overlay"></div>
+					<!-- <amchart name="chartdiv14" reportid="REPORT_FOURTEEN"></amchart> -->
+					<img src="resources/images/amCharts.png" class="img-responsive"
+						alt="" width="100%" />
+
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv1','chart_value_1')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+
+
+				</div>
+			</div>
+			<div class="col-md-3" style="padding-right: 0px; padding-left: 6px;" ng-if="user.role=='3'">
+				<div class="row chartHead">Modality wise Studies Pending</div>
+				<div class="chartDivs" id="chartdiv8" style="height: 16.5em;"
+					onclick="onpopup('chartdiv2','chart_value_2')">
+					<div class="overlay"></div>
+					<!-- <amchart name="chartdiv14" reportid="REPORT_FOURTEEN"></amchart>-->
+					<img src="resources/images/amCharts-3.png" class="img-responsive"
+						alt="" width="100%" />
+
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv2','chart_value_2')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+
+
+
+				</div>
+			</div>
+			<div class="col-md-3" style="padding-right: 0px; padding-left: 6px;" ng-if="user.role=='3'">
+				<div class="row chartHead">Equipment wise Studies Performed</div>
+				<div class="chartDivs" id="chartdiv9" style="height: 16.5em;"
+					onclick="onpopup('chartdiv3','chart_value_3')">
+					<div class="overlay"></div>
+					<img src="resources/images/amCharts-2.png" class="img-responsive"
+						alt="" width="100%" />
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv3','chart_value_3')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3" style="padding-left: 6px;" ng-if="user.role=='3'">
+				<div class="row chartHead" style="line-height: 13px;">Studies
+					Reported and Pending Modality Wise for Last 7 Days</div>
+				<div class="chartDivs" id="chartdiv10" style="height: 16em;"
+					onclick="onpopup('chartdiv4','chart_value_4')">
+					<div class="overlay"></div>
+					<img src="resources/images/amCharts-1.png" class="img-responsive"
+						alt="" width="100%" />
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv4','chart_value_4')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+			
+				<div class="col-md-6" style="padding-right: 0px; padding-left: 6px;" ng-if="user.role=='2'">
+				<div class="row chartHead">Finalized Comparison Report</div>
+				<div class="chartDivs" id="chartdiv11"  style="height: 16em;"
+					onclick="onpopup('chartdiv5','chart_value_5')">
+					<div class="overlay"></div>
+					<img src="resources/images/finalized-comparison.png" class="img-responsive"
+						alt="" width="100%" />
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv3','chart_value_3')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6" style="padding-left: 6px;" ng-if="user.role=='2'">
+				<div class="row chartHead">Completed Comparison Report</div>
+				<div class="chartDivs" id="chartdiv12"  style="height: 16em;"
+					onclick="onpopup('chartdiv6','chart_value_6')">
+					<div class="overlay"></div>
+					<img src="resources/images/completed-comparison.png" class="img-responsive"
+						alt="" width="100%" />
+					<div class="buttonHover">
+						<!-- <a onclick="onpopup('chartdiv4','chart_value_4')"> BUTTON </a> -->
+						<img src="resources/images/view_icon.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+	
+	
+</div>
+
+	</div>
+
+</div>
+
+
+<div class="container-fluid" id="dashreports" style="margin-top: -14px; margin-bottom: -8px;">
+	<div class="container">
+
+		<div class="row" style="margin: 0px;">
+			<div class='col-md-12'>
+				<p id="reportsheader">Detailed Reports</p>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid" id="dashreports">
+	<div class="container">
+
+		<div class="row"
+			style="margin: 0px; background-color: white; line-height: 30px;font-size: 16px;">
+			<div class="col-md-6 " ng-if="pref.report1==true">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_ELEVEN">Modality Wise Studies Performed</a>
+			</div>
+			<div class="col-md-6" ng-if="pref.report2==true">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_THIRTEEN">Department wise Patient</a>
+			</div>
+			
+			<div class="col-md-6" ng-if="pref.report9==true">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_NINE">Modality Wise Studies Completed Finalized Today</a>
+			</div>
+			<div class="col-md-6" ng-if="pref.report10==true">
+				<img src="resources/images/tick_icon.jpg"></img><a href="">Modality Wise Studies Completed Finalized Yesterday</a>
+			</div>
+
+		</div>
+
+		<div class="row"
+			style="margin: 0px; background-color: white; line-height: 30px;font-size: 16px;">
+			<div class="col-md-6 ">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_FOUR">Center wise Total Patient</a>
+			</div>
+			<div class="col-md-6 ">
+				<img src="resources/images/tick_icon.jpg"></img><a href="">Equipment Studies</a>
+			</div>
+
+		</div>
+
+
+		<div class="row"
+			style="margin: 0px; background-color: white; line-height: 30px; font-size: 16px;">
+			<div class="col-md-6">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_FIFTEEN">Modality Wise Studies Pending</a>
+			</div>
+			<div class="col-md-6">
+				<img src="resources/images/tick_icon.jpg"></img><a href="">Studies Report with Pending Modality</a>
+			</div>
+
+		</div>
+		
+		<div class="row"
+			style="margin: 0px; background-color: white; line-height: 30px; font-size: 16px;">
+			<div class="col-md-6">
+				<img src="resources/images/tick_icon.jpg"></img><a
+					href="#!reports/REPORT_FIFTEEN">Modality Wise Studies Completed Today</a>
+			</div>
+			<div class="col-md-6">
+				<img src="resources/images/tick_icon.jpg"></img><a href="">Modality Wise Studies Completed Yesterday</a>
+			</div>
+
+		</div>
+
+
+		
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container">
+
+		<div class="row" style="margin: 0px; height: 10px">
+			<div class='col-md-12'></div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="dashreports">
+	<div class="container">
+
+		<div class="row" style="margin: 0px; ">
+			<div class='col-md-12' style="margin: 0px; background-color: white;height:32px;">
+				<p id="copyRight">Copyright &copy 2017 SFO Technologies,All
+					rights reserved.</p>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+
+
+
+<script>
+
+var modal = document.getElementById('myModal');
+$( document ).ready(function() {
+	
+	console.log("outside");
+	//Get the modal
+	
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+
+		$(".modal-body").remove();
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+
+			$(".modal-body").remove();
+			modal.style.display = "none";
+		}
+	}
+	});
+	
+</script>
