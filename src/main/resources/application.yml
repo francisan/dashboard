@@ -4,7 +4,8 @@ server:
  
 datasource:
   fujifilm:
-    url:  https://postgresql-cubed-63195.herokuapp.com/
+    url: jdbc:postgresql://https://postgresql-cubed-63195.herokuapp.com/
+	
     username: postgres
     password: root
     driverClassName: org.postgresql.Driver
