@@ -4,9 +4,9 @@ server:
  
 datasource:
   fujifilm:
-    url: jdbc:postgresql://postgresql-cubed-63195
-    username: francisan
-    password: simpleMAN10
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
     driverClassName: org.postgresql.Driver
     defaultSchema:
     maxPoolSize: 3
