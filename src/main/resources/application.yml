@@ -4,7 +4,7 @@ server:
  
 datasource:
   fujifilm:
-    url: jdbc:postgresql://https://postgresql-cubed-63195.herokuapp.com/
+    url: jdbc:postgresql://postgresql-cubed-63195
 	
     username: postgres
     password: root
