@@ -1,1 +1,1 @@
-web: java -war target/nightingale-1.0.war
+web: java -jar target/nightingale-1.0.jar
