@@ -1,0 +1,7 @@
+com\nest\nightingales\controller\ViewController.class
+com\nest\nightingales\SpringBootCRUDApp.class
+com\nest\nightingales\configuration\JpaConfiguration.class
+com\nest\nightingales\exceptions\ReportNotFoundException.class
+com\nest\nightingales\configuration\ExceptionHandlerController.class
+com\nest\nightingales\configuration\WebMvcConfig.class
+com\nest\nightingales\model\Center.class
